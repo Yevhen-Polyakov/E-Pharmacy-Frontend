@@ -1,0 +1,17 @@
+.logo{
+    width: 32px;
+    height: 32px;
+}
+
+.burger{
+    width: 32px;
+    height: 32px;
+}
+
+.close{
+    position: absolute;
+    top: 39px;
+    right: 28px;
+    width: 32px;
+    height: 32px;
+}

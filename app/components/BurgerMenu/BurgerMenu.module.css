@@ -1,0 +1,48 @@
+.backdrop{
+    position: fixed;
+    inset: 0;
+    background-color: var(--backdrop);
+    z-index: 100;
+    animation: fadeIn 350ms ease both;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 260px 38px 46px 45px;
+    animation: slideIn 450ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .menu,
+    .backdrop {
+        animation: none;
+    }
+}

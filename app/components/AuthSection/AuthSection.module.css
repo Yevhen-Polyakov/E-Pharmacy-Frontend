@@ -1,0 +1,23 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+}
+
+.item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--textAuth); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.item:hover{
+    padding: 13px 32px;
+    text-decoration: none;
+    border: solid  1px var(--borderAuth);
+    border-radius: 60px;
+
+}

@@ -1,0 +1,23 @@
+.header{
+    background-color: var(--green);
+    padding-top: 25px;
+    
+}
+
+.headerWrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapLogo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logoText{
+    font-family: var(--font-family);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    color: var(--white);
+}
