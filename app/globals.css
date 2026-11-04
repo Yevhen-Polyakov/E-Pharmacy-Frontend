@@ -11,6 +11,11 @@
   --backdrop: rgba(29, 30, 33, 0.45);
   --background-nav: #d9d9d9;
   --borderAuth: rgba(241, 241, 241, 0.5);
+  --background-Line: rgba(247, 248, 250, 0.3);
+  --box-shadow: rgba(29, 30, 33, 0.02);
+  --promo-item: #fdfdfd;
+  --banner-background: rgba(231, 241, 237, 0.4);
+  --medicine-stores: #1d1e21;
 
   --font-family: " Inter", sans-serif;
 }

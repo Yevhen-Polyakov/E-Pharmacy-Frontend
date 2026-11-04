@@ -5,13 +5,20 @@ import Button from "../Button/Button"
 import Icon from "../Icon/Icon"
 import css from './BurgerMenu.module.css'
 import UserNav from "../UserNav/UserNav"
-import AuthSection from "../AuthSection/AuthSection"
+import AuthSection from "../AuthenticationLinks/AuthenticationLinks"
 
 const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false)
+
     const handleCloseMenu = () => {
         setIsOpen(false)
     } 
+
+    const handleBackdropClick =(e: React.MouseEvent<HTMLDivElement>)=> {
+        if(e.target === e.currentTarget) {
+            handleCloseMenu()
+        }
+    }
   
     return (
         <>
@@ -24,7 +31,8 @@ const BurgerMenu = () => {
             </Button>
 
             {isOpen && (
-                <div className={css.backdrop}>
+                <div className={css.backdrop}
+                    onClick={handleBackdropClick}>
                     <div className={css.menu}>
                         <Button 
                             variant='close'

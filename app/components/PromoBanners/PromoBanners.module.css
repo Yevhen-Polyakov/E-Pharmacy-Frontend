@@ -1,0 +1,75 @@
+.promo{
+    background-color: var(--silver-white);
+    padding-top: 40px;
+}
+
+.promoList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.promoItem{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1.15px solid var(--textAuth);
+    border-radius: 27px;
+    box-shadow: 0 -1px 14px 0 var(--box-shadow);
+    background-color: var(--promo-item);
+    padding: 14px 18px;
+    max-width: 335px;
+    height: 126px;  
+}
+
+.promoItem:nth-child(2) .footerWrap {
+    gap: 16px;
+}
+
+.headerWrap{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.numberBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--background-pharmacy);
+    width: 54px;
+    height: 54px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: var(--green);
+}
+
+.title{
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--dark);
+}
+
+.footerWrap{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.number{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--dark);
+}
+
+.link{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--grey);
+}

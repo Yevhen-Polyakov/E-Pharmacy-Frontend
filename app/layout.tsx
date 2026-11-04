@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const geInter = Inter({
   subsets: ["latin",],
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 
 type LayoutProps = {
   children: React.ReactNode;
-  modal: React.ReactNode;
+  modal?: React.ReactNode;
 }
 
 export default function RootLayout({ children, modal }: LayoutProps) {
@@ -28,11 +29,11 @@ export default function RootLayout({ children, modal }: LayoutProps) {
     <html lang="en" className={`${geInter.variable}`}>
       <body>
         <Header/>
-        <main>
-          {children}
-          {modal}
-        </main>
-        
+          <main>
+            {children}
+            {modal}
+          </main>
+        <Footer/>
         </body>
     </html>
   );

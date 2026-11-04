@@ -1,0 +1,24 @@
+.medicineStores{
+    padding-top: 80px;
+    background-color: var(--silver-white);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--medicine-stores); 
+    max-width: 291px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--grey); 
+    margin-bottom: 40px;
+}

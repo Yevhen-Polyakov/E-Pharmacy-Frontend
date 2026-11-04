@@ -1,15 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 
-  <symbol id="icon-logo" viewBox="0 0 32 32">
-    <image
-      x="0"
-      y="0"
-      width="32"
-      height="32"
-      href="data:image/webp;base64,UklGRrIBAABXRUJQVlA4WAoAAAAQAAAAHwAAHwAAQUxQSFUBAAABkCvbtmlb89q2bTuybdt8tm1GZurYjG3btjWCpYMfiIgJINnBucIRM9JoHSRHNDMkM10/BnXNIl4L/4bIfsLLCZr6dnBpZMi8D0ChJn4dHVdglTrv5D8AiFK73u+RPO/0K/D/GPOSCvnJzh4rX0H2IeUVFmVRIfg3/CZ8hPzxIACo7OLd99gJ1eWNTAfvX/gKKGcul9qeDuW/NhelEncL3n4WHAgFp5N5av+Xd/I8hJWTeF3MgTSwX1eeg/CC4T2pRXXM676rEOdMgtT8UQAvEi5BPN//jaCFmTce+Bh1HOI19lfBb7acsXjx4uxhYHARhK/aqXYxf4ETceuwK+4/59/1CQ7l3aSc8dH/ytvdm2cNFDhZdZzBNLU9O2PKzAJbJq3fcfAbgOlKNt9jiTr+Q6zWfpOIBqGFDdu1dbtCS/4I0VLOL2MiqpHpUPGqITZDnGwgAwBWUDggNgAAABADAJ0BKiAAIAA+kTqYR6WjoqEwCACwEglpAAB7xtKrgAD+77j//th//7XY//7VyIT/y1AAAA=="
-    />
-  </symbol>
-
   <symbol id="icon-burger" viewBox="0 0 39 32">
     <path
       fill="none"

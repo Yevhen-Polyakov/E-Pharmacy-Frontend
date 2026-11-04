@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import css from './AuthSection.module.css'
+import css from './AuthenticationLinks.module.css'
 
 type AuthProps = {
     onNavigate: ()=> void;
