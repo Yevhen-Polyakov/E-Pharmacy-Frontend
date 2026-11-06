@@ -2,7 +2,7 @@ import css from './Icon.module.css'
 
 type iconProps = {
     className?: string;
-    variant: 'burger' | 'close';
+    variant: 'burger' | 'close' | 'star' | 'location' | 'phone' | 'lightning';
     style?: React.CSSProperties;
     onClick?: ()=> void; 
 }

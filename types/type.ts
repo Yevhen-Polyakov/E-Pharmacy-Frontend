@@ -5,4 +5,5 @@ export type NearestMedicine = {
     city: string,
     phone: string,
     rating: number,
+    status: string,
 }

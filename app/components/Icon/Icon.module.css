@@ -10,3 +10,25 @@
     width: 32px;
     height: 32px;
 }
+
+.star{
+    color: var(--star);
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.location{
+    width: 18px;
+    height: 18px;
+}
+
+.phone{
+     width: 15px;
+     height: 15px;
+}
+
+.lightning{
+    width: 14px;
+    height: 16px;
+}

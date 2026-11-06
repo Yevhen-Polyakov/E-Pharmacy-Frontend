@@ -3,6 +3,7 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import TanstackProvider from "./components/TanstackProvider/TanstackProvider";
 
 const geInter = Inter({
   subsets: ["latin",],
@@ -28,13 +29,15 @@ export default function RootLayout({ children, modal }: LayoutProps) {
   return (
     <html lang="en" className={`${geInter.variable}`}>
       <body>
-        <Header/>
-          <main>
-            {children}
-            {modal}
-          </main>
-        <Footer/>
-        </body>
+        <TanstackProvider> 
+          <Header/>
+            <main>
+              {children}
+              {modal}
+            </main>
+          <Footer/>
+        </TanstackProvider>
+      </body>
     </html>
   );
 }

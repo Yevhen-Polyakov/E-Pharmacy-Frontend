@@ -1,0 +1,116 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pharmacyCart{
+    position: relative;
+    padding: 32px 32px 40px 32px;
+    border: 1.15px solid var(--textAuth);
+    border-radius: 27px;
+    background-color: var(--background-pharmacy);
+    height: 202px;
+    overflow: hidden;
+    
+}
+
+.headerCart{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--medicine-stores);
+    width: 132px;
+}
+
+.number{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--medicine-stores);
+    display: flex;
+    gap: 6px;
+}
+
+.statusWrap{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.open{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--green);
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: var(--status);
+}
+
+.closed{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--red);
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: var(--pink);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.address{
+    display: flex;
+    gap: 10px;
+}
+
+.location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--grey);
+    max-width: 105px;
+}
+
+.lineOne{
+    position: absolute;
+    top: 97px;
+    right: 0;
+    width: 59px;
+    height: auto;
+    pointer-events: none;
+}
+
+.lineTwo{
+    position: absolute;
+    top: 118px;
+    right: 0px;
+    width: 121px;
+    height: auto;
+    pointer-events: none;
+}
+
+.lineThree{
+    position: absolute;
+    top: 165px;
+    right: 9px;
+    width: 108px;
+    height: auto;
+    pointer-events: none;
+}
