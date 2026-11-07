@@ -7,3 +7,10 @@ export type NearestMedicine = {
     rating: number,
     status: string,
 }
+
+export type ReviewsResponse = {
+    _id: string,
+    name: string,
+    avatar: string,
+    testimonial: string,
+}

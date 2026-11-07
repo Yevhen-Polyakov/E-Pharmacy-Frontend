@@ -26,3 +26,54 @@
     text-align: center;
     color: var(--grey);
 }
+
+.item{
+    position: relative;
+    display: none;
+    border: 1px solid #f1f1f1;
+    background-color: var(--promo-item);
+    border-radius: 27px;
+    padding: 54px 16px 32px 16px;
+    text-align: center;
+}
+
+.item:nth-child(1) {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .item:nth-child(2){
+        display: block;
+    }  
+}
+
+@media screen and (min-width: 1440px) {
+    .item:nth-child(3){
+        display: block;
+    }
+}
+
+.img{
+    position:absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 14px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--medicine-stores);
+    margin-bottom: 16px;
+}
+
+.textReviews{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--grey);
+}

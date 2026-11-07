@@ -1,7 +1,15 @@
+'use client'
 
+import { useQuery } from '@tanstack/react-query'
 import css from './Reviews.module.css'
+import { getReviews } from '@/lib/api'
+import Image from 'next/image'
 
 const Reviews = () => {
+    const {data, isLoading, isError}= useQuery({
+        queryKey: ['reviews'],
+        queryFn: getReviews
+    })
    
     return (
         <section className={`${css.reviews} container`}>
@@ -11,10 +19,25 @@ const Reviews = () => {
             </div>
 
             <ul className={css.list}>
+            {isLoading && <p>...Loading</p>}
+            {isError && <p>Error!</p>}
 
-                <li className={css.item}>
+            {data?.map((reviews)=> (
 
+                <li key={reviews._id} className={css.item}>
+                    <Image 
+                        className={css.img}
+                        src={reviews.avatar}
+                        alt={reviews.name}
+                        width={64}
+                        height={64}
+                        />
+
+                     <p className={css.name}>{reviews.name}</p>
+                     <p className={css.textReviews}>{reviews.testimonial}</p>   
                 </li>
+            ))}
+                
 
             </ul>
         </section>
